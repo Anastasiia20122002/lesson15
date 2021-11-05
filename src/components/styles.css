@@ -1,211 +1,213 @@
-*{
-    margin-top:0;
-    padding:0;
+* {
+  margin-top: 0;
+  padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rubik:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rubik:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,500&display=swap');
-header{
-    display:flex;
-    flex-direction: row;
+@import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+header {
+  display: flex;
+  flex-direction: row;
 }
-header img{
-width:97px;
-height:94px;
-margin-top: 12px;
-padding-left: 36px;
+header img {
+  width: 97px;
+  height: 94px;
+  margin-top: 12px;
+  padding-left: 36px;
 }
-#top{
-    font-family: 'Princess Sofia', cursive;
-    font-weight: 400px;
-    width:79px;
-    padding-left:1px;
-    font-size:24px;
-    margin-top:28px;
-    text-align: right;
-    color:#6C5CE7;
+#top {
+  font-family: "Princess Sofia", cursive;
+  font-weight: 400px;
+  width: 79px;
+  padding-left: 1px;
+  font-size: 24px;
+  margin-top: 28px;
+  text-align: right;
+  color: #6c5ce7;
 }
-#bottom{
-    font-family: 'Princess Sofia', cursive;
-    font-weight: 400px;
-    font-size:24px;
-    margin-top:54px;
-    text-align: right;
-    color:#6C5CE7;
+#bottom {
+  font-family: "Princess Sofia", cursive;
+  font-weight: 400px;
+  font-size: 24px;
+  margin-top: 54px;
+  text-align: right;
+  color: #6c5ce7;
 }
-#buy img{
-    width:36px;
-    height:36px;
-    margin-top:22px;
+#buy_img {
+  width: 36px;
+  height: 36px;
+  margin-top: 22px;
 }
-#buy{
-    justify-content: space-between;
+#buy {
+  justify-content: space-between;
+}
+#text-buy {
+  width: 69px;
+  padding-right: 35px;
+  text-align: center;
+}
+#buy h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #6c5ce7;
+}
+#align {
+  display: flex;
+  justify-content: space-between;
+}
+#cart {
+  display: flex;
+  justify-content: right;
+  align-items: right;
 
+  padding-right: 49px;
 }
-#text-buy{
-width:69px;
-padding-right: 35px;
-text-align: center;}
-#buy h3{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    margin-top: 5px;
-    font-size: 18px;
-    color:#6C5CE7
+#block {
+  width: 430px;
+  height: 615px;
+  margin-top: 48px;
 }
-#align{
-    display:flex; 
-    justify-content: space-between;
+#pizza {
+  width: 430px;
+  height: 430px;
 }
-#cart{
-display: flex;
-justify-content: right;
-align-items: right;
-
-padding-right: 49px;
+#pizza img {
+  width: 430px;
+  height: 430px;
 }
-#block{
-width:430px;
-height:615px;
-margin-top:48px;
+#amount {
+  position: absolute;
+  margin-top: 15px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #6c5ce7;
 }
-#pizza{
-    width:430px;
-    height:430px;
+#length {
+  position: absolute;
+  color: #b2bec3;
+  margin-top: 35px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
 }
-#pizza img{
-    width:430px;
-    height:430px;
+#pizza-name {
+  padding-left: 73px;
+  height: 56px;
+  width: 300px;
 }
-#amount{
-    position: absolute;
-    margin-top:15px;
-    padding-left: 20px;;
-    font-size:14px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    color:#6C5CE7;
+#pizza-name h3 {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
 }
-#length{
-    position: absolute;
-    color:#B2BEC3;
-    margin-top:35px;
-    padding-left: 20px;;
-    font-size:14px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+#mini-des {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  width: 340px;
+  height: 40px;
+  padding-left: 50px;
+  text-align: center;
+  color: #b2bec3;
 }
-#pizza-name{
-    padding-left:73px;
-    height:56px;
-    width:300px;
-    
+#line-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9px;
 }
-#pizza-name h3{
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-weight:400;
-    font-size: 36px;
-
+#line {
+  width: 340px;
+  margin-top: 15px;
+  border: 1px solid #6c5ce7;
 }
-#mini-des{
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    width:340px;
-    height:40px;
-    padding-left:45px;
-    text-align: center;
-    color: #B2BEC3;
+#price {
+  font-family: "Rubik", sans-serif;
+  margin-top: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #6c5ce7;
+  padding-left: 45px;
 }
-#line{  
-    width:340px;
-    margin-top: 9px;
-    border: 1px solid #6C5CE7;
+#valute {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b2bec3;
+  padding-left: 3px;
 }
-#price{
-    font-family: 'Rubik', sans-serif;
-    margin-top: 13px;;
-    font-weight: 500;
-    font-size: 18px;
-    color:#6C5CE7;
-    padding-left: 45px;
-
+#plus {
+  padding-left: 77px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #6c5ce7;
+  padding-left: 77px;
 }
-#valute{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    margin-top: 15px;;
-    font-size: 15px;
-    color:#B2BEC3;
-    padding-left: 3px;
+#minus {
+  padding-left: 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #6c5ce7;
 }
-#plus{
-padding-left: 77px;
-font-family: 'Rubik', sans-serif;
-font-weight: 700;
-font-size: 18px;
-color:#6C5CE7;
-padding-left: 77px;
+#begcount {
+  font-family: "Rubik", sans-serif;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
-#minus{
-padding-left: 10px;
-font-family: 'Rubik', sans-serif;
-font-weight: 700;
-font-size: 18px;
-color:#6C5CE7;
+#counter {
+  margin-top: 13px;
+  width: 120px;
 }
-#begcount{
-    font-family: 'Rubik', sans-serif;
-    padding-left: 10px;
-    font-size:18px;
-    font-weight:500;
-
+#order {
+  display: flex;
+  flex-direction: row;
 }
-#counter{
-    margin-top:13px;
+#add {
+  justify-content: left;
+  font-family: "Rubik", sans-serif;
+  height: 40px;
+  width: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: #6c5ce7;
+  color: white;
+  border: 0;
 }
-#order{
-    display: flex;
-    flex-direction: row;
+#add-div {
+  padding-left: 80px;
+  display: flex;
+  justify-content: left;
 }
-#add{
-    font-family: 'Rubik', sans-serif;
-    width:80px;
-    height:40px;
-    font-size:18px;
-    font-weight: 700;
-    border-radius: 10px;
-    background-color: #6C5CE7;
-    color:white;
-    border:0;
-}
-#add-div{
-padding-left: 65px;
-}
-#align-vert{
-    padding-left: 33px;
-    display: flex;
-    flex-direction: column;
-
+#align-vert {
+  padding-left: 33px;
+  display: flex;
+  flex-direction: column;
 }
 
-#first-row{
-    display: flex;
-    flex-direction: row;
-    padding-right: 35px;
-    
+#first-row {
+  display: flex;
+  flex-direction: row;
+  padding-right: 35px;
 }
-#second-row{
-    margin-top:46px;
-    display: flex;
-    flex-direction: row;
-    padding-right: 35px;
-
+#second-row {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 35px;
 }
-#space{
-    padding-left: 41px;
+#space {
+  padding-left: 41px;
 }

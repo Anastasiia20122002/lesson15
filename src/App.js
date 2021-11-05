@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Block from "./components/Block";
+import BuyPizza from "./components/BuyPizza";
 import "./components/styles.css";
 import Description from "./components/Description";
 import { useEffect, useState } from "react";
@@ -8,7 +9,17 @@ import Modal from "./components/Modal";
 import Modal1 from "./components/Modal1";
 import Modal2 from "./components/Modal2";
 import InfoBlock from "./components/InfoBlock";
+import { getpizza } from "./components/state/reducers";
+// import { useSelector, useDispatch } from "react-redux";
+// import { bindActionCreators } from "redux";
+// import * as actionCreators from "./components/state/action-creators/index";
+import Navbar from "./components/Nav/Navbar";
 function App() {
+  // const pizza = useSelector((state) => state.pizzaCount);
+  // console.log(pizza);
+  // const dispatch = useDispatch();
+  // const { loadPizza } = bindActionCreators(actionCreators, dispatch);
+
   const [pizzas, setPizza] = useState([]);
   const BASE_URL =
     "https://q8zbks9a4l.execute-api.eu-central-1.amazonaws.com/Prod";
@@ -16,10 +27,20 @@ function App() {
   useEffect(() => {
     fetchPizzas();
   }, []);
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
+
   const [modalOpen, setModalOpen] = useState(false);
   const [modal1Open, setModal1Open] = useState(false);
   const [modal2Open, setModal2Open] = useState(false);
-
   async function CreateOrder() {
     const response = await fetch(BASE_URL + "/order", {
       method: "POST",
@@ -44,19 +65,7 @@ function App() {
   }
   return (
     <div>
-      <button onClick={CreateOrder}>CreateOrder</button>
-      <div className="App">
-        <button
-          className="openModalBtn"
-          onClick={() => {
-            setModalOpen(true);
-          }}
-        >
-          Open
-        </button>
-        {modalOpen && <Modal setOpenModal={setModalOpen} />}
-      </div>
-
+      <Navbar />
       <div className="App">
         <button
           className="openModalBtn"
